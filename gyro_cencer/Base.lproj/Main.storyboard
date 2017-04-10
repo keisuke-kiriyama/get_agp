@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gyro_cencer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,133 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yaxis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pml-7F-nqm">
+                                <rect key="frame" x="78" y="190" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zaxis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLe-Bw-KtI">
+                                <rect key="frame" x="77" y="251" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LH-ir-QgJ">
+                                <rect key="frame" x="182" y="190" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otL-jo-7se">
+                                <rect key="frame" x="182" y="251" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGP-vg-5Xw">
+                                <rect key="frame" x="182" y="132" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bq-3V-nOc">
+                                <rect key="frame" x="171.5" y="318.5" width="32" height="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="startGetGyro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QuD-cH-nCw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWR-Tw-wLR">
+                                <rect key="frame" x="172" y="368" width="31" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stopGetGyro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEK-KJ-TSv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xaxis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTq-ts-91L">
+                                <rect key="frame" x="78" y="132" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ajZ-ee-dJ0">
+                                <rect key="frame" x="67" y="406" width="240" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="2CS-Nt-nLb"/>
+                                    <constraint firstAttribute="width" constant="240" id="jNa-ui-l0y"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHR-vz-kHz">
+                                <rect key="frame" x="41" y="51" width="84" height="30"/>
+                                <state key="normal" title="acceleration"/>
+                                <connections>
+                                    <action selector="accelerationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYb-QP-g9S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZe-TV-tGz">
+                                <rect key="frame" x="172" y="51" width="31" height="30"/>
+                                <state key="normal" title="gyro"/>
+                                <connections>
+                                    <action selector="gyroButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jBM-2q-v7o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzm-h5-lqo">
+                                <rect key="frame" x="252" y="33" width="77" height="66"/>
+                                <state key="normal">
+                                    <string key="title">posture
+posture
+postureおp</string>
+                                </state>
+                                <connections>
+                                    <action selector="postureButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBz-UX-Tr7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vWR-Tw-wLR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1DJ-5Z-Gyc"/>
+                            <constraint firstItem="qzm-h5-lqo" firstAttribute="leading" secondItem="pZe-TV-tGz" secondAttribute="trailing" constant="49" id="1uX-vs-NTv"/>
+                            <constraint firstItem="qzm-h5-lqo" firstAttribute="centerY" secondItem="kHR-vz-kHz" secondAttribute="centerY" id="2Xp-4a-ZBo"/>
+                            <constraint firstItem="4bq-3V-nOc" firstAttribute="top" secondItem="otL-jo-7se" secondAttribute="bottom" constant="46.5" id="7gD-Ym-j2n"/>
+                            <constraint firstItem="otL-jo-7se" firstAttribute="centerY" secondItem="cLe-Bw-KtI" secondAttribute="centerY" id="7zq-o6-06F"/>
+                            <constraint firstItem="1LH-ir-QgJ" firstAttribute="top" secondItem="SGP-vg-5Xw" secondAttribute="bottom" constant="37" id="84I-c4-Rh6"/>
+                            <constraint firstItem="SGP-vg-5Xw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BbG-sp-Dpw"/>
+                            <constraint firstItem="pZe-TV-tGz" firstAttribute="centerY" secondItem="kHR-vz-kHz" secondAttribute="centerY" id="Ldb-az-cKH"/>
+                            <constraint firstItem="4bq-3V-nOc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NWJ-S4-3Je"/>
+                            <constraint firstItem="4bq-3V-nOc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O6w-qU-MN1"/>
+                            <constraint firstItem="4bq-3V-nOc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P6U-Au-Gz4"/>
+                            <constraint firstItem="SGP-vg-5Xw" firstAttribute="centerY" secondItem="BTq-ts-91L" secondAttribute="centerY" id="SE3-Ni-ngg"/>
+                            <constraint firstItem="1LH-ir-QgJ" firstAttribute="centerY" secondItem="pml-7F-nqm" secondAttribute="centerY" id="T8L-ud-uZV"/>
+                            <constraint firstItem="ajZ-ee-dJ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UYK-Yn-d4c"/>
+                            <constraint firstItem="pZe-TV-tGz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V28-1h-BhG"/>
+                            <constraint firstItem="SGP-vg-5Xw" firstAttribute="top" secondItem="pZe-TV-tGz" secondAttribute="bottom" constant="51" id="VgJ-uf-385"/>
+                            <constraint firstItem="ajZ-ee-dJ0" firstAttribute="top" secondItem="vWR-Tw-wLR" secondAttribute="bottom" constant="8" id="YEs-rF-pVW"/>
+                            <constraint firstItem="vWR-Tw-wLR" firstAttribute="top" secondItem="4bq-3V-nOc" secondAttribute="bottom" constant="19.5" id="alx-KY-XAP"/>
+                            <constraint firstItem="pml-7F-nqm" firstAttribute="centerX" secondItem="BTq-ts-91L" secondAttribute="centerX" id="dFW-Cy-TMs"/>
+                            <constraint firstItem="otL-jo-7se" firstAttribute="leading" secondItem="cLe-Bw-KtI" secondAttribute="trailing" constant="64" id="hMD-4R-2YU"/>
+                            <constraint firstItem="pZe-TV-tGz" firstAttribute="leading" secondItem="kHR-vz-kHz" secondAttribute="trailing" constant="47" id="icf-rj-1sZ"/>
+                            <constraint firstItem="cLe-Bw-KtI" firstAttribute="centerX" secondItem="pml-7F-nqm" secondAttribute="centerX" id="k4O-pF-mZo"/>
+                            <constraint firstItem="otL-jo-7se" firstAttribute="top" secondItem="1LH-ir-QgJ" secondAttribute="bottom" constant="40" id="mbC-7c-Brr"/>
+                            <constraint firstItem="vWR-Tw-wLR" firstAttribute="top" secondItem="4bq-3V-nOc" secondAttribute="bottom" constant="19.5" id="nKQ-Rg-jlK"/>
+                            <constraint firstItem="1LH-ir-QgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qEe-Uy-u9d"/>
+                            <constraint firstItem="otL-jo-7se" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r0J-gf-3bH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gyro_img" destination="ajZ-ee-dJ0" id="cG6-AO-ttI"/>
+                        <outlet property="xAxisLabel" destination="SGP-vg-5Xw" id="Sa4-Tc-FAp"/>
+                        <outlet property="xLabel" destination="BTq-ts-91L" id="jBT-su-6re"/>
+                        <outlet property="yAxisLabel" destination="1LH-ir-QgJ" id="KeA-r4-68G"/>
+                        <outlet property="yLabel" destination="pml-7F-nqm" id="llJ-LE-OQT"/>
+                        <outlet property="zAxisLabel" destination="otL-jo-7se" id="xaU-sy-pVc"/>
+                        <outlet property="zLabel" destination="cLe-Bw-KtI" id="RWq-nP-yOv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>

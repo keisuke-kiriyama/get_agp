@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB06675A1E9BA28F00CAAC96 /* acce.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0667591E9BA28F00CAAC96 /* acce.png */; };
+		FB06675C1E9BAF7E00CAAC96 /* posture.png in Resources */ = {isa = PBXBuildFile; fileRef = FB06675B1E9BAF7E00CAAC96 /* posture.png */; };
+		FB06675E1E9BB0FC00CAAC96 /* gyro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB06675D1E9BB0FC00CAAC96 /* gyro.jpg */; };
 		FBDB6F051E9B6DEF0028C2BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB6F041E9B6DEF0028C2BE /* AppDelegate.swift */; };
 		FBDB6F071E9B6DEF0028C2BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB6F061E9B6DEF0028C2BE /* ViewController.swift */; };
 		FBDB6F0A1E9B6DEF0028C2BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDB6F081E9B6DEF0028C2BE /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0667591E9BA28F00CAAC96 /* acce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acce.png; sourceTree = "<group>"; };
+		FB06675B1E9BAF7E00CAAC96 /* posture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = posture.png; sourceTree = "<group>"; };
+		FB06675D1E9BB0FC00CAAC96 /* gyro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gyro.jpg; sourceTree = "<group>"; };
 		FBDB6F011E9B6DEF0028C2BE /* gyro_cencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gyro_cencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDB6F041E9B6DEF0028C2BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBDB6F061E9B6DEF0028C2BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +107,9 @@
 				FBDB6F061E9B6DEF0028C2BE /* ViewController.swift */,
 				FBDB6F081E9B6DEF0028C2BE /* Main.storyboard */,
 				FBDB6F0B1E9B6DEF0028C2BE /* Assets.xcassets */,
+				FB0667591E9BA28F00CAAC96 /* acce.png */,
+				FB06675D1E9BB0FC00CAAC96 /* gyro.jpg */,
+				FB06675B1E9BAF7E00CAAC96 /* posture.png */,
 				FBDB6F0D1E9B6DEF0028C2BE /* LaunchScreen.storyboard */,
 				FBDB6F101E9B6DEF0028C2BE /* Info.plist */,
 			);
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					FBDB6F001E9B6DEF0028C2BE = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = YLVA8U3LAL;
 						ProvisioningStyle = Automatic;
 					};
 					FBDB6F141E9B6DEF0028C2BE = {
@@ -232,9 +242,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB06675A1E9BA28F00CAAC96 /* acce.png in Resources */,
 				FBDB6F0F1E9B6DEF0028C2BE /* LaunchScreen.storyboard in Resources */,
 				FBDB6F0C1E9B6DEF0028C2BE /* Assets.xcassets in Resources */,
 				FBDB6F0A1E9B6DEF0028C2BE /* Main.storyboard in Resources */,
+				FB06675E1E9BB0FC00CAAC96 /* gyro.jpg in Resources */,
+				FB06675C1E9BAF7E00CAAC96 /* posture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YLVA8U3LAL;
 				INFOPLIST_FILE = gyro_cencer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "keisuke-kiriyama.gyro-cencer";
@@ -426,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YLVA8U3LAL;
 				INFOPLIST_FILE = gyro_cencer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "keisuke-kiriyama.gyro-cencer";
@@ -507,6 +522,7 @@
 				FBDB6F2B1E9B6DEF0028C2BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBDB6F2C1E9B6DEF0028C2BE /* Build configuration list for PBXNativeTarget "gyro_cencerTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +531,7 @@
 				FBDB6F2E1E9B6DEF0028C2BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBDB6F2F1E9B6DEF0028C2BE /* Build configuration list for PBXNativeTarget "gyro_cencerUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +540,7 @@
 				FBDB6F311E9B6DEF0028C2BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
