@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBDB6F051E9B6DEF0028C2BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB6F041E9B6DEF0028C2BE /* AppDelegate.swift */; };
+		FBDB6F071E9B6DEF0028C2BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB6F061E9B6DEF0028C2BE /* ViewController.swift */; };
+		FBDB6F0A1E9B6DEF0028C2BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDB6F081E9B6DEF0028C2BE /* Main.storyboard */; };
+		FBDB6F0C1E9B6DEF0028C2BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDB6F0B1E9B6DEF0028C2BE /* Assets.xcassets */; };
+		FBDB6F0F1E9B6DEF0028C2BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDB6F0D1E9B6DEF0028C2BE /* LaunchScreen.storyboard */; };
+		FBDB6F1A1E9B6DEF0028C2BE /* gyro_cencerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB6F191E9B6DEF0028C2BE /* gyro_cencerTests.swift */; };
+		FBDB6F251E9B6DEF0028C2BE /* gyro_cencerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB6F241E9B6DEF0028C2BE /* gyro_cencerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBDB6F161E9B6DEF0028C2BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBDB6EF91E9B6DEF0028C2BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDB6F001E9B6DEF0028C2BE;
+			remoteInfo = gyro_cencer;
+		};
+		FBDB6F211E9B6DEF0028C2BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBDB6EF91E9B6DEF0028C2BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDB6F001E9B6DEF0028C2BE;
+			remoteInfo = gyro_cencer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBDB6F011E9B6DEF0028C2BE /* gyro_cencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gyro_cencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDB6F041E9B6DEF0028C2BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBDB6F061E9B6DEF0028C2BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBDB6F091E9B6DEF0028C2BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBDB6F0B1E9B6DEF0028C2BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBDB6F0E1E9B6DEF0028C2BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBDB6F101E9B6DEF0028C2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDB6F151E9B6DEF0028C2BE /* gyro_cencerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gyro_cencerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDB6F191E9B6DEF0028C2BE /* gyro_cencerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gyro_cencerTests.swift; sourceTree = "<group>"; };
+		FBDB6F1B1E9B6DEF0028C2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDB6F201E9B6DEF0028C2BE /* gyro_cencerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gyro_cencerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDB6F241E9B6DEF0028C2BE /* gyro_cencerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gyro_cencerUITests.swift; sourceTree = "<group>"; };
+		FBDB6F261E9B6DEF0028C2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBDB6EFE1E9B6DEF0028C2BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDB6F121E9B6DEF0028C2BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDB6F1D1E9B6DEF0028C2BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBDB6EF81E9B6DEF0028C2BE = {
+			isa = PBXGroup;
+			children = (
+				FBDB6F031E9B6DEF0028C2BE /* gyro_cencer */,
+				FBDB6F181E9B6DEF0028C2BE /* gyro_cencerTests */,
+				FBDB6F231E9B6DEF0028C2BE /* gyro_cencerUITests */,
+				FBDB6F021E9B6DEF0028C2BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBDB6F021E9B6DEF0028C2BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB6F011E9B6DEF0028C2BE /* gyro_cencer.app */,
+				FBDB6F151E9B6DEF0028C2BE /* gyro_cencerTests.xctest */,
+				FBDB6F201E9B6DEF0028C2BE /* gyro_cencerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBDB6F031E9B6DEF0028C2BE /* gyro_cencer */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB6F041E9B6DEF0028C2BE /* AppDelegate.swift */,
+				FBDB6F061E9B6DEF0028C2BE /* ViewController.swift */,
+				FBDB6F081E9B6DEF0028C2BE /* Main.storyboard */,
+				FBDB6F0B1E9B6DEF0028C2BE /* Assets.xcassets */,
+				FBDB6F0D1E9B6DEF0028C2BE /* LaunchScreen.storyboard */,
+				FBDB6F101E9B6DEF0028C2BE /* Info.plist */,
+			);
+			path = gyro_cencer;
+			sourceTree = "<group>";
+		};
+		FBDB6F181E9B6DEF0028C2BE /* gyro_cencerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB6F191E9B6DEF0028C2BE /* gyro_cencerTests.swift */,
+				FBDB6F1B1E9B6DEF0028C2BE /* Info.plist */,
+			);
+			path = gyro_cencerTests;
+			sourceTree = "<group>";
+		};
+		FBDB6F231E9B6DEF0028C2BE /* gyro_cencerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB6F241E9B6DEF0028C2BE /* gyro_cencerUITests.swift */,
+				FBDB6F261E9B6DEF0028C2BE /* Info.plist */,
+			);
+			path = gyro_cencerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBDB6F001E9B6DEF0028C2BE /* gyro_cencer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDB6F291E9B6DEF0028C2BE /* Build configuration list for PBXNativeTarget "gyro_cencer" */;
+			buildPhases = (
+				FBDB6EFD1E9B6DEF0028C2BE /* Sources */,
+				FBDB6EFE1E9B6DEF0028C2BE /* Frameworks */,
+				FBDB6EFF1E9B6DEF0028C2BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gyro_cencer;
+			productName = gyro_cencer;
+			productReference = FBDB6F011E9B6DEF0028C2BE /* gyro_cencer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBDB6F141E9B6DEF0028C2BE /* gyro_cencerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDB6F2C1E9B6DEF0028C2BE /* Build configuration list for PBXNativeTarget "gyro_cencerTests" */;
+			buildPhases = (
+				FBDB6F111E9B6DEF0028C2BE /* Sources */,
+				FBDB6F121E9B6DEF0028C2BE /* Frameworks */,
+				FBDB6F131E9B6DEF0028C2BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBDB6F171E9B6DEF0028C2BE /* PBXTargetDependency */,
+			);
+			name = gyro_cencerTests;
+			productName = gyro_cencerTests;
+			productReference = FBDB6F151E9B6DEF0028C2BE /* gyro_cencerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBDB6F1F1E9B6DEF0028C2BE /* gyro_cencerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDB6F2F1E9B6DEF0028C2BE /* Build configuration list for PBXNativeTarget "gyro_cencerUITests" */;
+			buildPhases = (
+				FBDB6F1C1E9B6DEF0028C2BE /* Sources */,
+				FBDB6F1D1E9B6DEF0028C2BE /* Frameworks */,
+				FBDB6F1E1E9B6DEF0028C2BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBDB6F221E9B6DEF0028C2BE /* PBXTargetDependency */,
+			);
+			name = gyro_cencerUITests;
+			productName = gyro_cencerUITests;
+			productReference = FBDB6F201E9B6DEF0028C2BE /* gyro_cencerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBDB6EF91E9B6DEF0028C2BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "桐山圭祐";
+				TargetAttributes = {
+					FBDB6F001E9B6DEF0028C2BE = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					FBDB6F141E9B6DEF0028C2BE = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FBDB6F001E9B6DEF0028C2BE;
+					};
+					FBDB6F1F1E9B6DEF0028C2BE = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FBDB6F001E9B6DEF0028C2BE;
+					};
+				};
+			};
+			buildConfigurationList = FBDB6EFC1E9B6DEF0028C2BE /* Build configuration list for PBXProject "gyro_cencer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBDB6EF81E9B6DEF0028C2BE;
+			productRefGroup = FBDB6F021E9B6DEF0028C2BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBDB6F001E9B6DEF0028C2BE /* gyro_cencer */,
+				FBDB6F141E9B6DEF0028C2BE /* gyro_cencerTests */,
+				FBDB6F1F1E9B6DEF0028C2BE /* gyro_cencerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBDB6EFF1E9B6DEF0028C2BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDB6F0F1E9B6DEF0028C2BE /* LaunchScreen.storyboard in Resources */,
+				FBDB6F0C1E9B6DEF0028C2BE /* Assets.xcassets in Resources */,
+				FBDB6F0A1E9B6DEF0028C2BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDB6F131E9B6DEF0028C2BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDB6F1E1E9B6DEF0028C2BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBDB6EFD1E9B6DEF0028C2BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDB6F071E9B6DEF0028C2BE /* ViewController.swift in Sources */,
+				FBDB6F051E9B6DEF0028C2BE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDB6F111E9B6DEF0028C2BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDB6F1A1E9B6DEF0028C2BE /* gyro_cencerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDB6F1C1E9B6DEF0028C2BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDB6F251E9B6DEF0028C2BE /* gyro_cencerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBDB6F171E9B6DEF0028C2BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBDB6F001E9B6DEF0028C2BE /* gyro_cencer */;
+			targetProxy = FBDB6F161E9B6DEF0028C2BE /* PBXContainerItemProxy */;
+		};
+		FBDB6F221E9B6DEF0028C2BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBDB6F001E9B6DEF0028C2BE /* gyro_cencer */;
+			targetProxy = FBDB6F211E9B6DEF0028C2BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBDB6F081E9B6DEF0028C2BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBDB6F091E9B6DEF0028C2BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBDB6F0D1E9B6DEF0028C2BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBDB6F0E1E9B6DEF0028C2BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBDB6F271E9B6DEF0028C2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBDB6F281E9B6DEF0028C2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBDB6F2A1E9B6DEF0028C2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = gyro_cencer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "keisuke-kiriyama.gyro-cencer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FBDB6F2B1E9B6DEF0028C2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = gyro_cencer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "keisuke-kiriyama.gyro-cencer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FBDB6F2D1E9B6DEF0028C2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = gyro_cencerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "keisuke-kiriyama.gyro-cencerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gyro_cencer.app/gyro_cencer";
+			};
+			name = Debug;
+		};
+		FBDB6F2E1E9B6DEF0028C2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = gyro_cencerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "keisuke-kiriyama.gyro-cencerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gyro_cencer.app/gyro_cencer";
+			};
+			name = Release;
+		};
+		FBDB6F301E9B6DEF0028C2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = gyro_cencerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "keisuke-kiriyama.gyro-cencerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = gyro_cencer;
+			};
+			name = Debug;
+		};
+		FBDB6F311E9B6DEF0028C2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = gyro_cencerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "keisuke-kiriyama.gyro-cencerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = gyro_cencer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBDB6EFC1E9B6DEF0028C2BE /* Build configuration list for PBXProject "gyro_cencer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDB6F271E9B6DEF0028C2BE /* Debug */,
+				FBDB6F281E9B6DEF0028C2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDB6F291E9B6DEF0028C2BE /* Build configuration list for PBXNativeTarget "gyro_cencer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDB6F2A1E9B6DEF0028C2BE /* Debug */,
+				FBDB6F2B1E9B6DEF0028C2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBDB6F2C1E9B6DEF0028C2BE /* Build configuration list for PBXNativeTarget "gyro_cencerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDB6F2D1E9B6DEF0028C2BE /* Debug */,
+				FBDB6F2E1E9B6DEF0028C2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBDB6F2F1E9B6DEF0028C2BE /* Build configuration list for PBXNativeTarget "gyro_cencerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDB6F301E9B6DEF0028C2BE /* Debug */,
+				FBDB6F311E9B6DEF0028C2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBDB6EF91E9B6DEF0028C2BE /* Project object */;
+}
